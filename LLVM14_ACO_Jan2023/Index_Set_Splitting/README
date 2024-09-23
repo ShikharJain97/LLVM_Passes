@@ -1,0 +1,15 @@
+This pass works for :
+1) only inner most loops .i.e when there is loop nest of depth>=2
+2) inner most loop body does'nt has any conditional branches
+3) can handle almost any "complex topology" of loop nest (see - test4_*.c in test folder) 
+
+This pass currently can split innermost loops as many times needed, but will not change loop bounds.
+
+Refrences:
+https://llvm.org/docs/ProgrammersManual.html
+https://llvm.org/docs/LangRef.html
+
+LLVM DOXYGEN for going thrugh all teh API provided by different classes.
+
+ 
+	     		
